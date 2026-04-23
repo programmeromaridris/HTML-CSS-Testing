@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
-body{
+html, body{
     position: relative;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
+html::-webkit-scrollbar
 body::-webkit-scrollbar {
     display:none;
 }
