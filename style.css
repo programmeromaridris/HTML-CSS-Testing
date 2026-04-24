@@ -205,7 +205,7 @@ body::before {
 
 .verse p:hover {
   color: var(--pink-deep);
-  transform: translateX(6px);
+  transform: translateX(6px) translateY(-6px) !important;
 }
 
 
