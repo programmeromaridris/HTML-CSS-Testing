@@ -7,6 +7,48 @@ canvas {
   display: block;
 }
 
+#sojiro{
+    position: absolute;
+    bottom: 60px;
+    left: -300px;
+    width: 250px;
+    opacity: 1;
+    transform: scale(1.1);
+    transition: left 0.6s ease;
+}
+
+#dialogue-box{
+    position: absolute;
+    bottom: 60px;
+    left: -600px;
+    width: 400px;
+    opacity: 0.9;
+    transition: left 0.3s ease;
+}
+
+#sojiro.slide-in {left: 400px;}
+#dialogue-box.slide-in {left: 500px;}
+
+.sojiro-dialogue{
+    position: fixed;
+    font-family: 'Arsenal', sans-serif;
+    bottom: 80px;
+    left: 460px;
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+#dialogue{
+    position: fixed;
+    
+}
+
+#sojiro.fade-out { opacity: 0; transition: opacity 0.5s ease 0.5s; }
+#dialogue-box.fade-out { opacity: 0; transition: opacity 0.5s ease; }
+#dialogue.fade-out { opacity: 0; transition: opacity 0.5s ease; }
+
+
 #calender-container{
     position: fixed;
     top: 20px;
