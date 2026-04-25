@@ -13,8 +13,27 @@ canvas {
     left: -300px;
     width: 250px;
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.48);
     transition: left 0.6s ease;
+}
+
+#name {
+    position: fixed;
+    font-family: 'Arsenal', sans-serif;
+    border-color: black;
+    bottom: 119px;
+    left: 375px;
+    width: -400px;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    color: rgb(0, 0, 0);
+    transform: rotate(-20deg);
+}
+
+.highlight{
+    background-color: black;
+    -webkit-text-stroke: 1px white !important;
+    color: white !important;
 }
 
 #dialogue-box{
@@ -27,26 +46,24 @@ canvas {
 }
 
 #sojiro.slide-in {left: 400px;}
+#name.slide-in {left: 555px;}
 #dialogue-box.slide-in {left: 500px;}
-
-.sojiro-dialogue{
-    position: fixed;
-    font-family: 'Arsenal', sans-serif;
-    bottom: 80px;
-    left: 460px;
-    width: 400px;
-    text-align: center;
-    color: white;
-}
 
 #dialogue{
     position: fixed;
-    
+    font-family: 'Arsenal', sans-serif;
+    bottom: 82px;
+    left: 425px;
+    width: 400px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transform: rotate(-2deg);
 }
 
-#sojiro.fade-out { opacity: 0; transition: opacity 0.5s ease 0.5s; }
-#dialogue-box.fade-out { opacity: 0; transition: opacity 0.5s ease; }
-#dialogue.fade-out { opacity: 0; transition: opacity 0.5s ease; }
+#name.fade-out { opacity: 0; transition: opacity 0.6s ease; }
+#sojiro.fade-out { opacity: 0; transition: opacity 0.6s ease 0.6s; }
+#dialogue-box.fade-out { opacity: 0; transition: opacity 0.6s ease; }
+#dialogue.fade-out { opacity: 0; transition: opacity 0.6s ease; }
 
 
 #calender-container{
