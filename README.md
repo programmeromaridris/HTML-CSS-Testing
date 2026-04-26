@@ -1,25 +1,42 @@
-# Glue Song — Lyrics Page
-
-A styled lyrics page for Glue Song by Beabadoobee. First project trying out HTML and CSS.
+# HTML / CSS Projects
 
 ---
 
-## Files
+## Projects
 
+### 1. Glue Song — Lyrics Page
+
+A styled lyrics page for Glue Song by Beabadoobee.
+
+**Files:**
 - `testing.html` — page structure and content
 - `style.css` — all styling
 - `thing.js` — falling petals animation and scroll-in effects
 - `background.mp4` — looping video used as the background
 
----
-
-## What the Page Does
-
 Displays the song lyrics with a blurred video background, animated falling petals, and a soft pink/beige color palette. Lines fade in as you scroll down. Hovering over lyrics lines shifts them slightly.
 
 ---
 
-## Things I Learned:  HTML
+### 2. Beneath the Mask — Persona 5 Homepage (WIP)
+
+A Persona 5 styled homepage. Heavily unfinished.
+
+**Files:**
+- `index.html` — page structure
+- `btmstyle.css` — all styling
+- `btm.js` — Sojiro dialogue intro, typewriter effect, music toggle
+- `calender/sketch.js` — Persona 5 styled calendar (credit: [FutroRing])
+- `beneaththemaskbackground.mp4` — looping background video
+- `sojiro.png`, `dialogue box.png`, `border-frame.png` — UI assets
+- `ahyou'reback.mp3` — intro audio clip
+- `bgmusic.mp3` — background music (Beneath the Mask)
+
+When you load the page, Sojiro slides in from the left with a dialogue box and says "Ah, you're back.." with a typewriter effect, then fades out. The background is a blurred looping video. A Persona 5 styled calendar sits in the top right corner. Spacebar toggles the background music.
+
+---
+
+## Things I Learned: HTML
 
 First time structuring a page properly with semantic tags.
 
@@ -33,6 +50,8 @@ First time structuring a page properly with semantic tags.
 - HTML entities for emoji/symbols (e.g. `&#127900;`)
 - Wrapping anchor tags around buttons for navigation: `<a href="..."><button>`
 - Linking a JS file at the bottom of `<body>` with `<script src="...">`
+- Loading external scripts via CDN (p5.js)
+- `<audio>` tag with `autoplay` and `loop` attributes
 
 ---
 
@@ -40,28 +59,26 @@ First time structuring a page properly with semantic tags.
 
 - CSS custom properties (`--variable-name`) defined in `:root` for reusable colors and fonts
 - `box-sizing: border-box` and resetting `margin`/`padding` globally with `*`
-- `position: fixed` for the video background and petal container so they stay in place while scrolling
-- `z-index` layering to stack the video, overlay gradients, petals, and content correctly
+- `position: fixed` and `position: absolute` for precise element placement
+- `z-index` layering to stack the video, overlays, and content correctly
 - `backdrop-filter: blur()` for the frosted glass effect on the lyrics card
-- `radial-gradient` for the soft color overlay on top of the video
+- `radial-gradient` for soft color overlays
 - `clamp()` for fluid font sizing that scales between a min and max based on viewport width
-- `@keyframes` for two animations: `fadeUp` (content entrance) and `fall` (petals dropping)
+- `@keyframes` for animations
 - `animation` shorthand: duration, easing, delay, and fill mode (`both`)
-- `IntersectionObserver` scroll animations handled in JS, but the actual opacity and transform transitions are defined in CSS
-- `transition` for smooth hover effects
-- `::before` pseudo-element for the gradient overlay on `body`
-- `@media` query for smaller screens to reduce padding
+- `transition` for smooth hover and slide effects
+- `::before` pseudo-element for gradient overlays on `body`
+- `@media` query for smaller screens
 - Hiding the scrollbar across browsers with `-ms-overflow-style`, `scrollbar-width`, and `::-webkit-scrollbar`
 - `scroll-behavior: smooth` on `html`
+- `overflow: hidden` to clip elements sliding in from off-screen
+- `-webkit-text-stroke` for outlined text
+- `transform: rotate()` for the Persona 5 tilted text aesthetic
 
 ---
 
 ## JavaScript
 
-To be honest i vibecoded this part because i don't really feel like learning JS logic atm.
-CSS and HTML were self taught via tutorials, documentation, tiktok vids and so on and so forth.
+Vibecoded. CSS and HTML were self-taught via tutorials, documentation, TikTok, and so on. JS logic is not something I wanted to dig into yet.
+
 ---
-
-## Notes
-
-The footer text is an inside joke, dont pay it much attention
