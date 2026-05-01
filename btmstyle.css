@@ -106,5 +106,52 @@ canvas {
     height: 100%;
     object-fit: cover;
     filter: blur(10px);
-    z-index: -2;
+    z-index: -3;
+}
+
+.button{
+  position: fixed;
+  align-items: center;
+  top: 220px;
+  left: 520px;
+  display: flex;
+  transform: rotate(20deg) scale(5);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button button{
+  background: transparent;
+  position: static;
+  border: none;   
+  -webkit-text-stroke: rgb(0, 0, 0) 0.5px;
+  font-family: 'Arsenal', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-text-fill-color: white 1px;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 50px;
+  cursor: default;
+  z-index: -2;
+}
+
+.button button:hover{
+  color:  #e20000;
+  transform: translateY(-10px) translateX(-8px);
+  text-decoration-thickness: 1.5px;
+}
+
+#starry {
+    position: fixed;
+    opacity: 0;
+    /* Optional: make them stand out with a P5 drop shadow */
+    filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.8));
+}
+
+#study-button{
+    opacity: 0;
+    /* Optional: make them stand out with a P5 drop shadow */
+    filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.8));
 }
